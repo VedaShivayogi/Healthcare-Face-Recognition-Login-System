@@ -1,0 +1,58 @@
+{
+  "Admin": {
+    "role": "Admin",
+    "pin_hash": "9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0",
+    "created": "2026-05-19 14:44:48",
+    "active": true,
+    "failed_attempts": 0
+  },
+  "ved": {
+    "role": "Admin",
+    "pin_hash": "3d329482e71a40d93800f8279fc68c1afae08caf514952e94252bae98294eaee",
+    "created": "2026-05-19 14:46:32",
+    "active": true,
+    "failed_attempts": 0
+  },
+  "dr.ved": {
+    "role": "Doctor",
+    "pin_hash": "3d329482e71a40d93800f8279fc68c1afae08caf514952e94252bae98294eaee",
+    "created": "2026-05-19 14:51:06",
+    "active": true,
+    "failed_attempts": 0
+  },
+  "Dr.Anandibai Joshi": {
+    "role": "Doctor",
+    "pin_hash": "3d329482e71a40d93800f8279fc68c1afae08caf514952e94252bae98294eaee",
+    "created": "2026-05-19 15:01:09",
+    "active": true,
+    "failed_attempts": 0
+  },
+  "Dr. Anandibai": {
+    "role": "Doctor",
+    "pin_hash": "3d329482e71a40d93800f8279fc68c1afae08caf514952e94252bae98294eaee",
+    "created": "2026-05-19 15:10:10",
+    "active": true,
+    "failed_attempts": 0
+  },
+  "Dr.Anandi": {
+    "role": "Doctor",
+    "pin_hash": "3d329482e71a40d93800f8279fc68c1afae08caf514952e94252bae98294eaee",
+    "created": "2026-05-19 15:15:55",
+    "active": true,
+    "failed_attempts": 0
+  },
+  "Dr.Ved": {
+    "role": "Doctor",
+    "pin_hash": "3d329482e71a40d93800f8279fc68c1afae08caf514952e94252bae98294eaee",
+    "created": "2026-05-19 15:24:15",
+    "active": true,
+    "failed_attempts": 0
+  },
+  "Dr.Veda": {
+    "role": "Doctor",
+    "pin_hash": "3d329482e71a40d93800f8279fc68c1afae08caf514952e94252bae98294eaee",
+    "created": "2026-05-19 15:27:38",
+    "active": true,
+    "failed_attempts": 0
+  }
+}

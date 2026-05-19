@@ -1,0 +1,51 @@
+[
+  {
+    "timestamp": "2026-05-19 14:52:26",
+    "type": "failed_login",
+    "name": "dr.ved",
+    "detail": "Wrong PIN for dr.ved (attempt 1)",
+    "read": false
+  },
+  {
+    "timestamp": "2026-05-19 14:52:26",
+    "type": "failed_login",
+    "name": "dr.ved",
+    "detail": "Wrong PIN for dr.ved (attempt 2)",
+    "read": false
+  },
+  {
+    "timestamp": "2026-05-19 15:07:22",
+    "type": "failed_login",
+    "name": "dr. anandibai joshi",
+    "detail": "Unknown user attempted login: dr. anandibai joshi",
+    "read": false
+  },
+  {
+    "timestamp": "2026-05-19 15:07:30",
+    "type": "failed_login",
+    "name": "dr. anandibai joshi",
+    "detail": "Unknown user attempted login: dr. anandibai joshi",
+    "read": false
+  },
+  {
+    "timestamp": "2026-05-19 15:07:36",
+    "type": "failed_login",
+    "name": "dr. anandibai joshi",
+    "detail": "Unknown user attempted login: dr. anandibai joshi",
+    "read": false
+  },
+  {
+    "timestamp": "2026-05-19 15:17:09",
+    "type": "failed_login",
+    "name": "Dr. anandi",
+    "detail": "Unknown user attempted login: Dr. anandi",
+    "read": false
+  },
+  {
+    "timestamp": "2026-05-19 15:17:19",
+    "type": "failed_login",
+    "name": "Dr. anandi",
+    "detail": "Unknown user attempted login: Dr. anandi",
+    "read": false
+  }
+]
