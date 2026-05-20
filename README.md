@@ -99,6 +99,7 @@ _Comprehensive audit trail with login history and security status_
 ## 📹 Demo Video
 
 [▶ Watch Full System Demo](https://raw.githubusercontent.com/VedaShivayogi/Healthcare-Face-Recognition-Login-System/main/demo.mp4)
+
 ---
 
 ## 🔗 Live Demo
