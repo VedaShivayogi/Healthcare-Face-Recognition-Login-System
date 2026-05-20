@@ -91,13 +91,7 @@ _Comprehensive audit trail with login history and security status_
 </div>
 ## 📹 Demo Video
 
-<div align="center">
-
-<a href="./demo.mp4">
-  <img src="https://img.shields.io/badge/▶%20Watch-Demo%20Video-blue?style=for-the-badge" />
-</a>
-
-</div>
+[▶ Watch Full System Demo](https://raw.githubusercontent.com/VedaShivayogi/Healthcare-Face-Recognition-Login-System/main/demo.mp4)
 ---
 
 ## 🔗 Live Demo
