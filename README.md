@@ -89,7 +89,15 @@ _Comprehensive audit trail with login history and security status_
 **[Watch Full System Demo (MP4)](./demo.mp4)** — 5-minute walkthrough of all features
 
 </div>
+## 📹 Demo Video
 
+<div align="center">
+
+<a href="./demo.mp4">
+  <img src="https://img.shields.io/badge/▶%20Watch-Demo%20Video-blue?style=for-the-badge" />
+</a>
+
+</div>
 ---
 
 ## 🔗 Live Demo
