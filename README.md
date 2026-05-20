@@ -80,34 +80,13 @@ _Real-time face detection during authentication_
 ![Access Logs](../output/log.png)
 _Comprehensive audit trail with login history and security status_
 
----
 
-## 📹 Demo Video
-
-<div align="center">
-
-**[Watch Full System Demo (MP4)](./demo.mp4)** — 5-minute walkthrough of all features
-
-</div>
-
-## 📹 Demo Video
-
-<video width="700" controls>
-  <source src="https://github.com/VedaShivayogi/Healthcare-Face-Recognition-Login-System/raw/main/demo.mp4" type="video/mp4">
-</video>
 
 ## 📹 Demo Video
 
 [▶ Watch Full System Demo](https://raw.githubusercontent.com/VedaShivayogi/Healthcare-Face-Recognition-Login-System/main/demo.mp4)
 
----
-## 📹 Demo Video
 
-[▶ Watch Full System Demo](https://github.com/VedaShivayogi/Healthcare-Face-Recognition-Login-System/blob/main/demo.mp4)
-
-## 📹 Demo Video
-
-[▶ Click Here to Watch Demo Video](https://github.com/VedaShivayogi/Healthcare-Face-Recognition-Login-System/blob/main/demo.mp4)
 
 
 ## 🔗 Live Demo
