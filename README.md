@@ -78,7 +78,7 @@ _Real-time face detection during authentication_
 
 ### Access Logs & Analytics
 
-![Access Logs](../output/log.png)
+![Access Logs](output/log.png)
 _Comprehensive audit trail with login history and security status_
 
 
