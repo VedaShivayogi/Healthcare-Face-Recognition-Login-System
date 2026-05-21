@@ -1,53 +1,283 @@
-from flask import Flask, jsonify
+```python
+"""
+KLIKE v4 – Healthcare Face Recognition Login System
+Fixed Version for Render Deployment
+"""
+
+import sys
 import os
+import tkinter as tk
+from tkinter import messagebox
 
-class KlikeApp:
+# =========================
+# PATH SETUP
+# =========================
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
+sys.path.insert(0, ROOT)
+sys.path.insert(0, os.path.join(ROOT, "modules"))
+
+# =========================
+# IMPORT DATABASE FUNCTIONS
+# =========================
+try:
+    from modules.db import (
+        load_users,
+        add_user,
+        load_logs,
+        load_alerts,
+        unread_alert_count
+    )
+except Exception as e:
+    print("Database import error:", e)
+
+    # fallback dummy functions
+    def load_users():
+        return {}
+
+    def add_user(name, role, pin):
+        pass
+
+    def load_logs():
+        return []
+
+    def load_alerts():
+        return []
+
+    def unread_alert_count():
+        return 0
+
+# =========================
+# THEME COLORS
+# =========================
+THEME = {
+    "BG": "#0A1628",
+    "CARD": "#10233F",
+    "TEXT": "#FFFFFF",
+    "BTN": "#00D4C8",
+    "RED": "#FF4C6A"
+}
+
+# =========================
+# BASE PAGE
+# =========================
+class BasePage(tk.Frame):
+    def __init__(self, parent, controller):
+        super().__init__(parent, bg=THEME["BG"])
+        self.controller = controller
+
+    def go(self, page):
+        self.controller.show_frame(page)
+
+# =========================
+# START PAGE
+# =========================
+class StartPage(BasePage):
+    def __init__(self, parent, controller):
+        super().__init__(parent, controller)
+
+        tk.Label(
+            self,
+            text="KLIKE v4",
+            font=("Arial", 28, "bold"),
+            bg=THEME["BG"],
+            fg=THEME["TEXT"]
+        ).pack(pady=30)
+
+        tk.Label(
+            self,
+            text="Healthcare Face Recognition System",
+            font=("Arial", 14),
+            bg=THEME["BG"],
+            fg=THEME["TEXT"]
+        ).pack(pady=5)
+
+        tk.Button(
+            self,
+            text="Register",
+            font=("Arial", 12, "bold"),
+            bg=THEME["BTN"],
+            fg="black",
+            width=20,
+            command=lambda: controller.show_frame("RegisterPage")
+        ).pack(pady=20)
+
+        tk.Button(
+            self,
+            text="Login",
+            font=("Arial", 12, "bold"),
+            bg=THEME["BTN"],
+            fg="black",
+            width=20,
+            command=lambda: controller.show_frame("LoginPage")
+        ).pack(pady=10)
+
+        tk.Button(
+            self,
+            text="Exit",
+            font=("Arial", 12, "bold"),
+            bg=THEME["RED"],
+            fg="white",
+            width=20,
+            command=controller.destroy
+        ).pack(pady=30)
+
+# =========================
+# REGISTER PAGE
+# =========================
+class RegisterPage(BasePage):
+    def __init__(self, parent, controller):
+        super().__init__(parent, controller)
+
+        tk.Label(
+            self,
+            text="User Registration",
+            font=("Arial", 22, "bold"),
+            bg=THEME["BG"],
+            fg=THEME["TEXT"]
+        ).pack(pady=20)
+
+        tk.Label(self, text="Full Name", bg=THEME["BG"], fg="white").pack()
+        self.name_entry = tk.Entry(self, width=30)
+        self.name_entry.pack(pady=5)
+
+        tk.Label(self, text="PIN", bg=THEME["BG"], fg="white").pack()
+        self.pin_entry = tk.Entry(self, width=30, show="*")
+        self.pin_entry.pack(pady=5)
+
+        tk.Button(
+            self,
+            text="Register",
+            bg=THEME["BTN"],
+            fg="black",
+            width=20,
+            command=self.register_user
+        ).pack(pady=20)
+
+        tk.Button(
+            self,
+            text="Back",
+            bg="gray",
+            fg="white",
+            width=20,
+            command=lambda: controller.show_frame("StartPage")
+        ).pack()
+
+    def register_user(self):
+        name = self.name_entry.get().strip()
+        pin = self.pin_entry.get().strip()
+
+        if not name:
+            messagebox.showerror("Error", "Enter name")
+            return
+
+        if not pin:
+            messagebox.showerror("Error", "Enter PIN")
+            return
+
+        users = load_users()
+
+        if name in users:
+            messagebox.showerror("Error", "User already exists")
+            return
+
+        add_user(name, "Patient", pin)
+
+        messagebox.showinfo("Success", "Registration completed")
+
+        self.controller.show_frame("StartPage")
+
+# =========================
+# LOGIN PAGE
+# =========================
+class LoginPage(BasePage):
+    def __init__(self, parent, controller):
+        super().__init__(parent, controller)
+
+        tk.Label(
+            self,
+            text="User Login",
+            font=("Arial", 22, "bold"),
+            bg=THEME["BG"],
+            fg=THEME["TEXT"]
+        ).pack(pady=20)
+
+        tk.Label(self, text="Name", bg=THEME["BG"], fg="white").pack()
+        self.name_entry = tk.Entry(self, width=30)
+        self.name_entry.pack(pady=5)
+
+        tk.Label(self, text="PIN", bg=THEME["BG"], fg="white").pack()
+        self.pin_entry = tk.Entry(self, width=30, show="*")
+        self.pin_entry.pack(pady=5)
+
+        tk.Button(
+            self,
+            text="Login",
+            bg=THEME["BTN"],
+            fg="black",
+            width=20,
+            command=self.login
+        ).pack(pady=20)
+
+        tk.Button(
+            self,
+            text="Back",
+            bg="gray",
+            fg="white",
+            width=20,
+            command=lambda: controller.show_frame("StartPage")
+        ).pack()
+
+    def login(self):
+        name = self.name_entry.get().strip()
+        pin = self.pin_entry.get().strip()
+
+        users = load_users()
+
+        if name not in users:
+            messagebox.showerror("Error", "User not found")
+            return
+
+        messagebox.showinfo("Success", f"Welcome {name}")
+
+# =========================
+# MAIN APPLICATION
+# =========================
+class KlikeApp(tk.Tk):
     def __init__(self):
+        super().__init__()
 
-        self.app = Flask(__name__)
+        self.title("KLIKE v4")
+        self.geometry("900x600")
+        self.configure(bg=THEME["BG"])
 
-        # Ensure default Admin exists
-        if "Admin" not in load_users():
-            add_user("Admin", "Admin", "0000")
+        # CREATE DEFAULT ADMIN
+        try:
+            users = load_users()
 
-        self.setup_routes()
+            if "Admin" not in users:
+                add_user("Admin", "Admin", "0000")
 
-    def setup_routes(self):
+        except Exception as e:
+            print("Admin creation error:", e)
 
-        @self.app.route('/')
-        def home():
-            return jsonify({
-                "message": "KLIKE v4 Healthcare Face Recognition System Running"
-            })
+        container = tk.Frame(self, bg=THEME["BG"])
+        container.pack(fill="both", expand=True)
 
-        @self.app.route('/health')
-        def health():
-            return jsonify({
-                "status": "success"
-            })
+        self.frames = {}
 
-        @self.app.route('/users')
-        def users():
-            return jsonify(load_users())
+        for Page in [StartPage, RegisterPage, LoginPage]:
+            page_name = Page.__name__
 
-        @self.app.route('/patients')
-        def patients():
-            return jsonify(load_patients())
+            frame = Page(container, self)
 
-        @self.app.route('/logs')
-        def logs():
-            return jsonify(load_logs())
+            self.frames[page_name] = frame
 
-        @self.app.route('/alerts')
-        def alerts():
-            return jsonify(load_alerts())
+            frame.grid(row=0, column=0, sticky="nsew")
 
-    def run(self):
+        self.show_frame("StartPage")
 
-        port = int(os.environ.get("PORT", 10000))
-
-        self.app.run(
-            host='0.0.0.0',
-            port=port
-        )
+    def show_frame(self, page_name):
+        frame = self.frames[page_name]
+        frame.tkraise()
+```
