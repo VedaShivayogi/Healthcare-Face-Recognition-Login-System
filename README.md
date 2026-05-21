@@ -73,7 +73,7 @@ _Live face capture session — collecting 300 training samples_
 
 ### Dashboard & Verification
 
-![Face Detection](../output/reg%20det.png)
+![Face Detection](output/reg%20det.png)
 _Real-time face detection during authentication_
 
 ### Access Logs & Analytics
