@@ -67,7 +67,8 @@ python run.py
 ![User Registration](output/reg.png)
 _User registration interface — name, role, and PIN setup_
 
-![Face Capture](../output/cap%20300.png)
+
+![Face Capture](output/cap%20300.png)
 _Live face capture session — collecting 300 training samples_
 
 ### Dashboard & Verification
