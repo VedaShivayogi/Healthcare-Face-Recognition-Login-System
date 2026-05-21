@@ -64,7 +64,7 @@ python run.py
 
 ### Registration & Face Capture
 
-![User Registration](../output/reg.png)
+![User Registration](output/reg.png)
 _User registration interface — name, role, and PIN setup_
 
 ![Face Capture](../output/cap%20300.png)
