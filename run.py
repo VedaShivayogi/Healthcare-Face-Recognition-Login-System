@@ -1,24 +1,24 @@
 """
 KLIKE v4 Healthcare Face Recognition System
-========================================
-Run:  python run.py
+Flask Render Deployment Version
 """
-import sys, os
+
+import sys
+import os
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+
 sys.path.insert(0, ROOT)
 sys.path.insert(0, os.path.join(ROOT, "core"))
 sys.path.insert(0, os.path.join(ROOT, "modules"))
 
 from core.app import KlikeApp
-import tkinter as tk
+
+# Create Flask App
+app_instance = KlikeApp()
+
+# Render/Gunicorn app object
+app = app_instance.app
 
 if __name__ == "__main__":
-    app = KlikeApp()
-    try:
-        icon = os.path.join(ROOT, "assets", "icon.ico")
-        app.iconphoto(True, tk.PhotoImage(file=icon))
-    except Exception:
-        pass
-    app.mainloop()
-
+    app_instance.run()
