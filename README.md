@@ -56,7 +56,6 @@ python run.py
 | 🎨 **Dark & Light Themes**         | Professional dual-theme support for different work environments                |
 | 🔒 **Account Security**            | Hashed PIN storage, 5-attempt lockout, account enable/disable controls         |
 
----
 
 ## 📸 Screenshots
 
