@@ -18,7 +18,7 @@
 
 KLIKE v4 is an enterprise-grade healthcare authentication system that leverages AI-powered face recognition combined with PIN verification to provide secure, convenient access control. Designed specifically for medical facilities, it includes role-based dashboards, comprehensive audit logging, and advanced analytics.
 
----
+
 
 ## ⚡ Quick Start
 
