@@ -39,7 +39,6 @@ python run.py
 - Username: `Admin`
 - PIN: `0000`
 
----
 
 ## ✨ Features
 
