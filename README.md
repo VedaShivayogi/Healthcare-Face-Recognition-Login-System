@@ -176,9 +176,9 @@ KLIKE_v4/
     └── LICENSE                    ← MIT License
 ```
 
----
 
----
+
+
 
 ## 🚀 Installation & Setup
 
@@ -221,7 +221,7 @@ KLIKE_v4/
    - Application window will open automatically
    - Login with default admin credentials: `Admin` / `0000`
 
----
+
 
 ## 👤 User Workflow
 
