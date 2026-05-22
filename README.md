@@ -98,7 +98,6 @@ _Comprehensive audit trail with login history and security status_
 
 </div>
 
----
 
 ## 📁 Folder Structure
 
