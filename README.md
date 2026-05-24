@@ -276,7 +276,7 @@ KLIKE_v4/
 | **Backend**          | Python 3.8+   | Core application logic                                |
 | **Security**         | SHA-256       | PIN hashing & encryption                              |
 
---
+-
 
 ## 📊 System Architecture
 
