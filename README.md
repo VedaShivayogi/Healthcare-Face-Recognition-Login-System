@@ -339,7 +339,7 @@ Install all at once:
 pip install -r requirements.txt
 ```
 
----
+--
 
 ## 🚀 Performance Optimization
 
