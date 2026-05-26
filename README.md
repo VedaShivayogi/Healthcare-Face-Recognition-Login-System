@@ -319,7 +319,7 @@ KLIKE_v4/
 | **Alert System**      | Real-time notifications | Immediate threat detection          |
 | **Local Processing**  | No cloud sync           | Data never leaves the machine       |
 
---
+-
 
 ## 📋 Requirements
 
