@@ -349,7 +349,7 @@ pip install -r requirements.txt
 - **Memory Usage**: ~200-400MB average
 - **Supports concurrent users**: Yes (multi-threaded)
 
---
+-
 
 ## 🐛 Troubleshooting
 
