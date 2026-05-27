@@ -382,7 +382,7 @@ python --version  # Must be 3.8 or higher
 - Close other applications
 - Ensure adequate system resources
 
----
+--
 
 ## 📝 License
 
