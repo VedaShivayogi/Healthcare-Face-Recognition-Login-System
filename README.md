@@ -426,7 +426,7 @@ Contributions are welcome! Follow these steps:
 
 
 
-**Q: Can I use this in a real hospital?**  
+**Q: Can I use this in a real hospital?
 A: Yes! The system meets healthcare security standards. Consult your IT department before deployment.
 
 **Q: How accurate is the face recognition?**  
