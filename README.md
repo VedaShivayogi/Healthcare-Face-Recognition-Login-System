@@ -413,7 +413,6 @@ Contributions are welcome! Follow these steps:
 - Write unit tests for new features
 - Update README for significant changes
 
--
 
 ## 📞 Contact & Support
 
