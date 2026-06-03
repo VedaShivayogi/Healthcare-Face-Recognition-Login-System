@@ -423,8 +423,7 @@ Contributions are welcome! Follow these steps:
 | **🐛 Issues**      | GitHub Issues for bug reports           |
 | **💬 Discussions** | GitHub Discussions for feature requests |
 
---
-
+-
 ## ❓ FAQ
 
 **Q: Can I use this in a real hospital?**  
