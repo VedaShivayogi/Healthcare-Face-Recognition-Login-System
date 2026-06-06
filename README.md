@@ -468,6 +468,5 @@ A: Admin can reset it from the Admin Dashboard.
 
 **Made with ❤️ for Healthcare**
 
-⭐ If you found this helpful, please star the re
-
+⭐ If you found this helpful, please star the 
 
