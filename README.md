@@ -468,4 +468,4 @@ A: Admin can reset it from the Admin Dashboard.
 
 **Made with ❤️ for Healthcare**
 
-⭐ If yo
+⭐ If y
