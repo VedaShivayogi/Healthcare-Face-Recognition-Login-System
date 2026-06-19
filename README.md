@@ -466,6 +466,6 @@ A: Admin can reset it from the Admin Dashboard.
 
 <div align="center">
 
-**Made with ❤️ for Healthcare
+**Made with ❤️ for Healthcar
 
 
