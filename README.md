@@ -388,7 +388,7 @@ This project is licensed under the **MIT License** — see [LICENSE](./LICENSE) 
 ```
 MIT License
 
-Copyright (c) 2024 KLIKE v4 Healthcare
+Copyright (c) 2026 KLIKE v4 Healthcare
 
 Permission is hereby granted, free of charge...
 ```
