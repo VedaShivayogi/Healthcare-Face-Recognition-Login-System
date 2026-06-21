@@ -444,7 +444,7 @@ A: Yes! Each user gets their own trained face recognition model.
 **Q: What if I forget my PIN?**  
 A: Admin can reset it from the Admin Dashboard.
 
--
+
 ## 🎯 Roadmap
 
 - [ ] Cloud backup support
