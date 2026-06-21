@@ -455,7 +455,7 @@ A: Admin can reset it from the Admin Dashboard.
 - [ ] Dark theme enhancement
 - [ ] Internationalization (multi-language)
 
--
+
 ## 📚 Additional Resources
 
 - [OpenCV Documentation](https://docs.opencv.org/)
