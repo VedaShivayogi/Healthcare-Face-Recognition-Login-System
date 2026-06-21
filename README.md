@@ -462,7 +462,7 @@ A: Admin can reset it from the Admin Dashboard.
 - [PySimpleGUI Guide](https://pysimplegui.readthedocs.io/)
 - [Python Security Best Practices](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/)
 
--
+
 
 <div align="center">
 
