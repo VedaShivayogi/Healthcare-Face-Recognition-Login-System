@@ -442,8 +442,8 @@ A: Core security features are compliant. Consult healthcare compliance experts f
 A: Yes! Each user gets their own trained face recognition model.
 
 **Q: What if I forget my PIN?**  
-A: Admin can reset it from the Adm
-
+A: Admin can reset it from the Ad
+6
 ## 🎯 Roadmap
 
 - [ ] Cloud backup support
