@@ -465,5 +465,5 @@ A: Ad
 
 <div align="center">
 
-**Made with ❤️ for Healthc
+**Made with ❤️ for Healt
 
