@@ -465,5 +465,4 @@ A: Yes! Each user gets their own trained face recognition model.
 
 <div align="center">
 
-*
 
