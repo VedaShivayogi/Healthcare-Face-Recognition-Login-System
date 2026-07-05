@@ -441,7 +441,7 @@ A: Core security features are compliant. Consult healthcare compliance experts f
 **Q: Can multiple people use this system?**  
 A: Yes! Each user gets their own trained face recognition model.
 
-**Q: What if I for
+**Q: What if I fo
 
 ## 🎯 Roadmap
 
