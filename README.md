@@ -439,8 +439,7 @@ A: Yes! Multiple formats supported: Excel, PDF, JSON.
 A: Core security features are compliant. Consult healthcare compliance experts for your specific deployment.
 
 **Q: Can multiple people use this system?**  
-A: Yes! Each user gets their own trained face recognition mo
-
+A: Yes! Each user gets their own trained face recognition m
 
 
 ## 🎯 Roadmap
