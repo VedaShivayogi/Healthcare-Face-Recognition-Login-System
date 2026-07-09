@@ -1,4 +1,4 @@
-"""KLIKE – AI model training module."""
+"""KLIKE – AI model training module.."""
 import numpy as np
 from PIL import Image
 import os
