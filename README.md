@@ -439,7 +439,7 @@ A: Yes! Multiple formats supported: Excel, PDF, JSON.
 A: Core security features are compliant. Consult healthcare compliance experts for your specific deployment.
 
 **Q: Can multiple people use this system?**  
-A: Yes! E
+A: Yes! 
 
 ## 🎯 Roadmap
 
