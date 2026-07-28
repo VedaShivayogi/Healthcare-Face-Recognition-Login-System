@@ -438,7 +438,7 @@ A: Yes! Multiple formats supported: Excel, PDF, JSON.
 **Q: Is the system HIPAA compliant?**  
 A: Core security features are compliant. Consult healthcare compliance experts for your specific deployment.
 
-**Q: Can multiple people use thi
+**Q: Can multiple people use th
 
 
 ## 🎯 Roadmap
