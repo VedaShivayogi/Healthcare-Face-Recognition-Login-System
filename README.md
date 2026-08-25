@@ -234,7 +234,7 @@ KLIKE_v4/
 3. Click **Next: Capture Face**
 4. Position your face in the camera frame and capture 300 images
 5. Click **Train AI Model** to generate the recognition model
-6. User account is now active ✅
+6. User account is now active 
 
 ### 2️⃣ Patient Login (Multi-Factor Authentication)
 
