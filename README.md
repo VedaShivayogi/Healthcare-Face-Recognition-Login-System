@@ -436,7 +436,7 @@ A: ~95% accuracy with 300 training samples under good lighting. Accuracy improve
 A: Yes! Multiple formats supported: Excel, PDF, JSON.
 
 **Q: Is the system HIPAA compliant?**  
-A: Core security features are compliant. 
+A: Core security features are compliant
 
 
 
