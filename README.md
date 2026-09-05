@@ -435,7 +435,7 @@ A: ~95% accuracy with 300 training samples under good lighting. Accuracy improve
 **Q: Can I export patient data?**  
 A: Yes! Multiple formats supported: Excel, PDF, JSON.
 
-**Q: Is the system HIPAA comp
+**Q: Is the system HIPAA com
 
 
 ## 🎯 Roadmap
