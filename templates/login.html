@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KLIKE Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <div class="brand-logo">K</div>
+          <div>
+            <h1>KLIKE</h1>
+            <p>Healthcare Access</p>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a class="nav-link active" href="/login">Login</a>
+          <a class="nav-link" href="/register">Register</a>
+          <a class="nav-link" href="/face-verification">Face Verify</a>
+        </nav>
+      </aside>
+      <main class="main-panel">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Secure portal</p>
+            <h2>Employee and patient access</h2>
+          </div>
+        </div>
+        <div class="card auth-card">
+          <h3>Login</h3>
+          <p>Enter your username and PIN to begin secure verification.</p>
+          <form id="login-form">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="Enter username" required />
+
+            <label for="pin">PIN</label>
+            <input id="pin" name="pin" type="password" inputmode="numeric" placeholder="Enter PIN" required />
+
+            <button type="submit" class="primary-btn">Verify PIN</button>
+          </form>
+          <div id="login-message" class="status-message"></div>
+          <p class="helper-text">Need an account? <a href="/register">Register here</a></p>
+        </div>
+      </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+  </body>
+</html>

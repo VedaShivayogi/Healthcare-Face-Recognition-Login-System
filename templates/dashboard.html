@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KLIKE Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <div class="brand-logo">K</div>
+          <div>
+            <h1>KLIKE</h1>
+            <p>Healthcare Portal</p>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a class="nav-link active" href="/dashboard">Overview</a>
+          <a class="nav-link" href="/admin">Admin</a>
+          <a class="nav-link" href="/doctor">Doctor</a>
+          <a class="nav-link" href="/patient">Patient</a>
+        </nav>
+        <button id="logout-btn" class="secondary-btn full-width">Logout</button>
+      </aside>
+      <main class="main-panel">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Welcome</p>
+            <h2>{{ user.username }}</h2>
+          </div>
+          <span class="badge role-badge">{{ user.role }}</span>
+        </div>
+
+        <section class="stats-grid">
+          <div class="stat-card">
+            <span>Login Status</span>
+            <strong>Authenticated</strong>
+          </div>
+          <div class="stat-card">
+            <span>Appointments</span>
+            <strong>{{ appointments|length }}</strong>
+          </div>
+          <div class="stat-card">
+            <span>Recent Activity</span>
+            <strong>{{ logs|length }}</strong>
+          </div>
+          <div class="stat-card">
+            <span>Alerts</span>
+            <strong>{{ alerts|length }}</strong>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div class="card wide-card">
+            <h3>Appointments</h3>
+            <table>
+              <thead>
+                <tr><th>Patient</th><th>Date</th><th>Doctor</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                {% for item in appointments %}
+                <tr>
+                  <td>{{ item.patient_name }}</td>
+                  <td>{{ item.appointment_date }}</td>
+                  <td>{{ item.doctor }}</td>
+                  <td><span class="status-pill success">{{ item.status }}</span></td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card">
+            <h3>Recent Activity</h3>
+            <ul class="activity-list">
+              {% for log in logs[:5] %}
+              <li>{{ log.username }} - {{ log.status }} via {{ log.method }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+  </body>
+</html>

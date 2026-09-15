@@ -1,0 +1,23 @@
+**/__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+.env
+.env.*
+
+# biometric and personal data
+*.db
+*.sqlite3
+data/faces/
+data/classifiers/
+data/Dr.Veda/
+config/*.json
+logs/*.json
+
+*.jpg
+*.jpeg
+*.png
+
+# generated output
+output/

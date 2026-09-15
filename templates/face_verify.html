@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KLIKE Face Verification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <div class="brand-logo">K</div>
+          <div>
+            <h1>KLIKE</h1>
+            <p>Secure Identity</p>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a class="nav-link" href="/login">Login</a>
+          <a class="nav-link" href="/register">Register</a>
+          <a class="nav-link active" href="/face-verification">Face Verify</a>
+        </nav>
+      </aside>
+      <main class="main-panel">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Verification</p>
+            <h2>KLIKE Healthcare</h2>
+          </div>
+        </div>
+        <div class="card verification-card">
+          <h3>Secure Identity Verification</h3>
+          <div class="camera-box">
+            <video id="camera-preview" autoplay playsinline muted></video>
+            <div id="camera-status" class="camera-status">Waiting for camera...</div>
+          </div>
+          <div class="verify-actions">
+            <button id="start-camera" class="primary-btn">Start Camera</button>
+            <button id="verify-face" class="secondary-btn">Verify Identity</button>
+          </div>
+          <div id="face-message" class="status-message"></div>
+          <div class="confidence-box">
+            <span>Confidence:</span>
+            <strong id="confidence-value">--</strong>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/camera.js') }}"></script>
+  </body>
+</html>

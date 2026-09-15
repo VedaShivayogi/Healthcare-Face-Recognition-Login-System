@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KLIKE Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <div class="brand-logo">K</div>
+          <div>
+            <h1>KLIKE</h1>
+            <p>Healthcare Access</p>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a class="nav-link" href="/login">Login</a>
+          <a class="nav-link active" href="/register">Register</a>
+          <a class="nav-link" href="/face-verification">Face Verify</a>
+        </nav>
+      </aside>
+      <main class="main-panel">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">New account</p>
+            <h2>Create healthcare profile</h2>
+          </div>
+        </div>
+        <div class="card auth-card">
+          <h3>Register</h3>
+          <form id="register-form">
+            <label for="username">Full name</label>
+            <input id="username" name="username" type="text" placeholder="e.g. Jane Smith" required />
+
+            <label for="role">Role</label>
+            <select id="role" name="role">
+              <option value="Admin">Admin</option>
+              <option value="Doctor">Doctor</option>
+              <option value="Nurse">Nurse</option>
+              <option value="Patient" selected>Patient</option>
+            </select>
+
+            <label for="pin">PIN (4-6 digits)</label>
+            <input id="pin" name="pin" type="password" inputmode="numeric" placeholder="Enter PIN" required />
+
+            <button type="submit" class="primary-btn">Create account</button>
+          </form>
+          <div id="register-message" class="status-message"></div>
+          <p class="helper-text">Already have an account? <a href="/login">Go to login</a></p>
+        </div>
+      </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/register.js') }}"></script>
+  </body>
+</html>

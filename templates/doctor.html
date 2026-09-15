@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <div class="brand-logo">K</div>
+          <div>
+            <h1>KLIKE</h1>
+            <p>Doctor Portal</p>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a class="nav-link active" href="/doctor">Patients</a>
+          <a class="nav-link" href="/dashboard">Dashboard</a>
+        </nav>
+        <button id="logout-btn" class="secondary-btn full-width">Logout</button>
+      </aside>
+      <main class="main-panel">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Doctor</p>
+            <h2>Patient care overview</h2>
+          </div>
+        </div>
+        <section class="card">
+          <h3>Patients</h3>
+          <table>
+            <thead><tr><th>Name</th><th>DOB</th><th>Doctor</th><th>Conditions</th></tr></thead>
+            <tbody>
+              {% for patient in patients %}
+              <tr>
+                <td>{{ patient.name }}</td>
+                <td>{{ patient.dob }}</td>
+                <td>{{ patient.doctor }}</td>
+                <td>{{ patient.conditions }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+  </body>
+</html>
