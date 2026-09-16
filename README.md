@@ -27,7 +27,7 @@ The application is deployed as a Flask web application using Render and Gunicorn
 
 > **Note:** This is an educational/portfolio prototype. Do not upload real patient or biometric data.
 
---
+-
 
 ## 📌 Overview
 
