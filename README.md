@@ -114,7 +114,7 @@ The application includes:
 * Role-based permissions
 * Hashed PIN storage
 
---
+-
 
 # 🏗️ System Architecture
 
