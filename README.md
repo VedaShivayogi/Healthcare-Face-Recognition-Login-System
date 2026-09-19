@@ -44,7 +44,7 @@ The application is deployed as a Flask web application using Render and Gunicorn
 
 The original project was developed as a desktop-based healthcare application and has been converted into a **Flask web application** so that the system can run through a browser and be deployed on Python hosting platforms.
 
----
+--
 
 # ✨ Features
 
