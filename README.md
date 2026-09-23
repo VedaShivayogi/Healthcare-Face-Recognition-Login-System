@@ -351,7 +351,7 @@ The browser will request camera permission before capturing images.
 4. Check that the deployment is using HTTPS.
 5. Check browser console errors if necessary.
 
----
+--
 
 # 🤖 Face Recognition Pipeline
 
