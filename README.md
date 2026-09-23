@@ -151,7 +151,7 @@ The application includes:
                          └──────────────┘
 ```
 
--
+
 
 # 🛠️ Technology Stack
 
