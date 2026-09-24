@@ -171,7 +171,6 @@ The application includes:
 | Deployment        | Render                |
 | Version Control   | Git & GitHub          |
 
--
 
 # 📂 Project Structure
 
