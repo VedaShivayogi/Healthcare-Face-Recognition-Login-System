@@ -231,7 +231,7 @@ Healthcare-Face-Recognition-Login-System/
 └── docs/
 ```
 
----
+--
 
 # 🚀 Run Locally
 
