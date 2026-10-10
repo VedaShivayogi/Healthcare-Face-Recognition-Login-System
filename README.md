@@ -1,4 +1,4 @@
-# 🏥 KLIKE Healthcare Face Recognition Login System
+## 🏥 KLIKE Healthcare Face Recognition Login System
 
 <p align="center">
   <b>A Flask-based healthcare access prototype using PIN authentication and browser-based face recognition.</b>
