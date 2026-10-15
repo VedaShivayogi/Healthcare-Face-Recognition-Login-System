@@ -16,7 +16,7 @@
 
 
 
-## 🌐 Live Demo
+##  Live Demo
 
 ### 🚀 Try the Application
 
