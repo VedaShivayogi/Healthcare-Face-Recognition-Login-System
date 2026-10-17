@@ -1,6 +1,6 @@
 """
 KLIKE v4 Healthcare Face Recognition System
-========================================
+=========================================
 Run:  python run.py
 """
 import sys, os
