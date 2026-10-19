@@ -624,7 +624,7 @@ If you find this project useful for learning or academic purposes, consider givi
 | 💻 GitHub      | https://github.com/VedaShivayogi/Healthcare-Face-Recognition-Login-System |
 | 👩‍💻 LinkedIn | https://www.linkedin.com/in/vedasram/                                     |
 
----
+--
 
 <p align="center">
   <b>🏥 KLIKE Healthcare Face Recognition Login System</b>
