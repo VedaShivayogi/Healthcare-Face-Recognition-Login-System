@@ -18,7 +18,7 @@
 
 ##  Live Demo
 
-### 🚀 Try the Application
+###  Try the Application
 
 **Live Demo:**
 https://healthcare-face-recognition-login-system-owew.onrender.com
