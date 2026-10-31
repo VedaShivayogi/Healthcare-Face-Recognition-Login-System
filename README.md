@@ -462,7 +462,7 @@ The application supports report generation using:
 OpenPyXL
 ```
 
-### PDF
+## PDF
 
 ```text
 ReportLab
