@@ -452,7 +452,7 @@ This prevents personal face images, local databases, logs, and secrets from bein
 
 ---
 
-# 📊 Reports
+# 📊 Reports.
 
 The application supports report generation using:
 
